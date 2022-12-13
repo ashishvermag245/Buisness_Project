@@ -1,0 +1,114 @@
+header{
+    background-color:#b28af8;
+}
+.navbar{
+    z-index:2;
+    .navbar-brand{
+        img{
+            background: white;
+            padding: 15px;
+            border-radius: 50%;
+            width: 55px;
+        }
+    }
+    .navbar-collapse{
+        justify-content: space-between;
+        .navbar-nav{
+            gap: 10px;
+            .nav-item{
+                .nav-link{
+                    font-size:20px;
+                    color: #fff;
+                    border-bottom: 2px solid transparent;
+                    &:hover{
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+.hero-screen{
+    height: 100vh;
+    .hero-text{
+        h1{
+            width: 370px;
+            line-height: 60px;
+            color: #fff;
+            letter-spacing: 7px;
+            @include mobile{
+                font-size: 20px;
+                width: 100%;
+                line-height: 30px;
+                letter-spacing: 4px;
+                text-align: center;
+            }
+        }
+        h4{
+            color: #fff;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            @include mobile{
+                font-size: 14px;
+                line-height: 20px;
+                text-align:center;
+            }
+        }
+        button{
+            width: 250px;
+            color: #b28af8;
+            @include mobile{
+                width: 100%;
+            }
+        }
+        .btn-img{
+            width: 40px;
+            padding: 10px;
+            background-color:#c3abed;
+            border-radius: 50%;     
+            @include mobile{
+                display: none;
+            }       
+        }
+    }
+    .hero-images{
+        position: relative;
+        .hero-img1{
+            width: 100%;            
+            top: -165px;
+            right: -280px;
+            opacity: 0.3;
+            // position: absolute;
+            @include mobile{
+                display: none;
+            }
+
+        }
+        .hero-img2{
+            width: 100%;
+            position: absolute;
+            right: -150px;
+            top: 18px;
+            @include mobile{
+                width: 100%;
+                position: absolute;
+                right: 5px;
+                top: -220px;
+                opacity: 0.3;
+            }
+        
+        }
+        .hero-img3{
+            width: 100%;
+            position: absolute;
+            right: -130px;
+            top: -185px;
+            @include mobile{
+                display: none;
+            }
+            
+        }
+        }
+       
+    }
